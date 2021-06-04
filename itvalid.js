@@ -1,4 +1,6 @@
 'use strict';
+
+// TODO: add logic for distributed validators network approve of validations result, using hydra network
 module.exports = valid = {
 
     object: (validation, exact) => value => {
@@ -12,6 +14,7 @@ module.exports = valid = {
             });
         }
         console.log(ok);
+        
         return ok;
     },
 
